@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Comanda from '../components/Comanda.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<Comanda>
+
+	</Comanda>
+
+	
+	<main>
+		<div class="list">
+			<Card
+				href=""
+				title="Mesa 1"
+				img="/public/Prueba.jpg"
+			/>
+			<Card
+				href=""
+				title="Mesa 1"
+				img="/public/Prueba.jpg"
+			/>
+			<Card
+				href=""
+				title="Mesa 1"
+				img="/public/Prueba.jpg"
+			/>
+			<Card
+				href=""
+				title="Mesa 1"
+				img="/public/Prueba.jpg"
+			/>
+			<Card
+				href=""
+				title="Mesa 1"
+				img="/public/Prueba.jpg"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		height: 85%;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	main .list{
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		list-style: none;
+		gap: 1.5em;
+		height: 8em;
+		border: 1px solid;
+	}
+
+	
+
+</style>
