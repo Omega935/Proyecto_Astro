@@ -1,0 +1,40 @@
+---
+import Card from '../components/Card.astro';
+---
+<div class="list">
+    <Card
+        href=""
+        title="Mesa 1"
+        img="/public/Prueba.jpg"
+    />
+    <Card
+        href=""
+        title="Mesa 1"
+        img="/public/Prueba.jpg"
+    />
+    <Card
+        href=""
+        title="Mesa 1"
+        img="/public/Prueba.jpg"
+    />
+    <Card
+        href=""
+        title="Mesa 1"
+        img="/public/Prueba.jpg"
+    />
+    <Card
+        href=""
+        title="Mesa 1"
+        img="/public/Prueba.jpg"
+    />
+</div>
+
+<style>
+    .list{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        list-style: none;
+        gap: 1.5em;
+        height: 10em;
+	}
+</style>

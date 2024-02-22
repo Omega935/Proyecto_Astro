@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Comanda from '../components/Comanda.astro';
+import Filas from '../components/Filas.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,33 +11,12 @@ import Comanda from '../components/Comanda.astro';
 
 	
 	<main>
-		<div class="list">
-			<Card
-				href=""
-				title="Mesa 1"
-				img="/public/Prueba.jpg"
-			/>
-			<Card
-				href=""
-				title="Mesa 1"
-				img="/public/Prueba.jpg"
-			/>
-			<Card
-				href=""
-				title="Mesa 1"
-				img="/public/Prueba.jpg"
-			/>
-			<Card
-				href=""
-				title="Mesa 1"
-				img="/public/Prueba.jpg"
-			/>
-			<Card
-				href=""
-				title="Mesa 1"
-				img="/public/Prueba.jpg"
-			/>
-		</div>
+		<Filas/>
+		<Filas/>
+		<Filas/>
+		<Filas/>
+		<Filas/>
+		<Filas/>
 	</main>
 </Layout>
 
@@ -47,18 +26,8 @@ import Comanda from '../components/Comanda.astro';
 		width: 90%;
 		display: flex;
 		flex-direction: column;
-		gap: 2em;
-	}
-
-	main .list{
-		display: grid;
-		grid-template-columns: repeat(5,1fr);
-		list-style: none;
 		gap: 1.5em;
-		height: 8em;
-		border: 1px solid;
+        max-height: 100em;
+        overflow-y: auto;
 	}
-
-	
-
 </style>
